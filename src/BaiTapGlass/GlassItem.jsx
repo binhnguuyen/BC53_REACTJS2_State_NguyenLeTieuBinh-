@@ -2,12 +2,12 @@
 export const GlassItem = (props) => {
     const { product, wearGlass } = props
   return (
-    <div className="col-3 mt-3">
+    <div className="col-4 mt-2">
         <button className="btn btn-outline-dark" style={{
-            width: 200,
+            width: 250,
         }} onClick={() => wearGlass(product)}>
             <img src={product.url} alt="" style={{
-                width: 100,
+                width: 150,
             }}/>
             <div className="card-body">
                 <p className="card-title">{product.name}</p>

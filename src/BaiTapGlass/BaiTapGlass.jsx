@@ -15,18 +15,18 @@ export const BaiTapGlass = () => {
       <div
         className="img-fluid"
         style={{
-          backgroundImage: { bgImage },
+          backgroundImage: bgImage,
           backgroundRepeat: "no-repeats",
-          //   backgroundSize: "cover",
-          width: 1000,
-          height: 1000,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: 900,
         }}
       >
         <div
           className="row"
           style={{
             position: "relative",
-            top: 600,
+            top: 590,
           }}
         >
           <div className="col-6">
