@@ -1,14 +1,21 @@
 import React, { useState } from "react";
 import data from "./dataGlasses.json";
+import { GlassList } from "./GlassList";
 
 export const BaiTapGlass = () => {
-  // console.log('data: ', data)
+  const bgImage = `url("glassesImage/background.jpg")`;
+  const modelImage = `glassesImage/model.jpg`;
+  
+  // Tạo hàm wearGlass nhận vào tham số glass
+  const wearGlass = (glass) => {
+    console.log('glass: ', glass);
+  }
   return (
     <div className="container mt-3">
       <div
         className="img-fluid"
         style={{
-          backgroundImage: `url(image/background.jpg)`,
+          backgroundImage: { bgImage },
           backgroundRepeat: "no-repeats",
           //   backgroundSize: "cover",
           width: 1000,
@@ -24,7 +31,7 @@ export const BaiTapGlass = () => {
         >
           <div className="col-6">
             <img
-              src="image/model.jpg"
+              src={modelImage}
               alt=""
               style={{
                 width: 250,
@@ -33,7 +40,7 @@ export const BaiTapGlass = () => {
           </div>
           <div className="col-6">
             <img
-              src="image/model.jpg"
+              src={modelImage}
               alt=""
               style={{
                 width: 250,
@@ -42,6 +49,10 @@ export const BaiTapGlass = () => {
           </div>
         </div>
       </div>
+      <GlassList 
+        data={data}
+        wearGlass={wearGlass}
+      />
     </div>
   );
 };
