@@ -64,10 +64,10 @@ export const BaiTapGlass = () => {
               }}
             />
             <img src={glass} alt="" style={{
-              width: 150,
+              width: 145,
               position: "relative",
-              top: "24%",
-              left: "13.5%",
+              top: 80,
+              left: 62,
               zIndex: 2,
             }}/>
           </div>
