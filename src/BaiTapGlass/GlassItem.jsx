@@ -2,7 +2,7 @@
 export const GlassItem = (props) => {
     const { product, wearGlass } = props
   return (
-    <div className="col-4 mt-2">
+    <div className="col-4 mt-2" key={product.id}>
         <button className="btn btn-outline-dark" style={{
             width: 250,
         }} onClick={() => wearGlass(product)}>
