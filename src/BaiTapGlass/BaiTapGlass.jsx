@@ -7,24 +7,19 @@ export const BaiTapGlass = () => {
   const modelImage = `glassesImage/model.jpg`;
   const wearModelImage = `glassesImage/v1.png`;
   
-  const [glass, setGlass] = useState([
-    {
-      id: 1,
-      price: 30,
-      name: 
-        "GUCCI G8850U",
-      url: 
-        "./glassesImage/v1.png",
-      desc: 
-        "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. "
-    }
-  ])
+  const [glass, setGlass] = useState(
+      "./glassesImage/v1.png"
+    )
 
 
   // Tạo hàm wearGlass nhận vào tham số glass
   const wearGlass = (glass) => {
-    // console.log('glass: ', glass);
-    setGlass(glass)
+    // glass.forEach(value => {
+    //   // jpgURL = 
+    // });
+    setGlass(
+      `./glassesImage/v${glass.id}.png`
+    )
   }
 
 
@@ -68,11 +63,11 @@ export const BaiTapGlass = () => {
                 width: 270,
               }}
             />
-            <img src={wearModelImage} alt="" style={{
-              width: 160,
+            <img src={glass} alt="" style={{
+              width: 150,
               position: "relative",
               top: "24%",
-              left: "12%",
+              left: "13.5%",
               zIndex: 2,
             }}/>
           </div>
