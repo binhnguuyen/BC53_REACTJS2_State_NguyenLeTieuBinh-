@@ -8,7 +8,7 @@ export const BaiTapGlass = () => {
   const wearModelImage = `glassesImage/v1.png`;
   
   const [glass, setGlass] = useState(
-      "./glassesImage/v1.png"
+      // "./glassesImage/v1.png"
     )
 
 
